@@ -48,20 +48,26 @@ body {
   margin-bottom: 10px;
 }
 
-div .login {
+.login {
   width: 25rem;
   background: #e0e0e0;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-div .login form {
+@media screen and (max-width: 770px) {
+  .login {
+    width: 40vmax;
+  }
+}
+
+.login form {
   margin: 8px;
   display: flex;
   flex-direction: column;
 }
 
-div .login form input {
+.login form input {
   margin: 5px;
   padding: 8px;
   border: none;
@@ -69,7 +75,7 @@ div .login form input {
   background: #d1d1d1;
 }
 
-div .login form button {
+.login form button {
   margin: 5px;
   padding: 8px;
   border: none;
@@ -79,12 +85,12 @@ div .login form button {
   color: #fff;
 }
 
-div .login form button:enabled {
+.login form button:enabled {
   background: #178428;
   transition: opacity 1s;
 }
 
-div .login form button:enabled:hover {
+.login form button:enabled:hover {
   opacity: 0.75;
 }
 
@@ -95,6 +101,13 @@ div .login form button:enabled:hover {
   justify-content: space-between;
 
   width: 40rem;
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    width: 40vmax;
+    height: 90vmax;
+  }
 }
 
 .container li {
